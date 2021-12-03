@@ -1,0 +1,599 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-image: url("../img/bg-tablet-pattern.svg");
+}
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+/*HEADER*/
+header{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    height: 174px;
+   
+    padding: 0 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    position: relative;
+    left: 0px;
+    right: 89.28%;
+    top: 0%;
+    bottom: 32.13%;
+}
+.menu a{
+    color: #242E52;
+    text-decoration: none;
+    padding: 0 10px;
+    Transition: 0.4s;
+}
+.mostrar-menu{
+    display: none;
+}
+.esconder-menu{
+    font-size: 13px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-meu{
+    order: 1;
+    width: 20px;
+}
+
+.menu a:hover,
+.mostrar-menu:hover
+.esconder-menu{
+    color: #F3603B;
+}
+#check{
+    display: none;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 375px){
+        /*HEADER*/
+    .mostrar-menu{
+        display: flex;
+    }
+    .esconder-menu{
+        
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .botonmenu{
+        display: none;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: gray;
+        left: 0;
+        right: -100%;
+        top:0%;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu{
+        display: block;
+        padding: 20px;
+
+    }
+    .esconder-menu{
+        position: absolute;
+        top:40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    #banner{
+        flex-direction: column;
+    }
+    #diferent{
+        flex-direction: column;
+    }
+    #personas{
+        flex-direction: column;
+    }
+    #contenido4{
+        flex-direction: column;
+    }
+    #conten{
+        flex-direction: column;
+    }
+}
+@media (min-width: px){
+    /*HEADER*/
+.mostrar-menu, 
+.esconder-menu{
+    display: block;
+}
+
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: gray;
+    left: 0;
+    right: -100%;
+    top:0%;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+}
+.menu{
+    display: block;
+    padding: 20px;
+
+}
+.esconder-menu{
+    position: absolute;
+    top:40px;
+    right: 40px;
+}
+#check:checked ~ .menu{
+    right: 0;
+}
+#banner{
+    flex-direction: column;
+}
+#diferent{
+    flex-direction: column;
+}
+#personas{
+    flex-direction: column;
+}
+#contenido4{
+    flex-direction: column;
+}
+#conten{
+    flex-direction: column;
+}
+}
+
+.botonmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    position: relative;
+    width: 128px;
+    height: 30px;
+    left: 0;
+    top: 0;
+
+    background: #F3603B;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+a.botonmenu{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+a.botonmenu:hover{
+    background: rgb(143, 148, 167);
+} 
+
+
+
+/* banner */
+#banner{
+    padding: 0 50px;
+    background: white;
+    height: 600px;
+}
+.ilustracion{
+    position:absolute;
+    right: 0;
+    padding: 0 30px;
+}
+.contenedor-banner{
+    width: 439px;
+    height: 386px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    top: 200px;
+}
+
+.contenidor-banner{
+    background-position: center;
+    padding: 10px 0px;
+}
+
+
+#bring{
+    font-size: 55px;
+    font-weight: bold;
+    color: #232C50;
+    line-height: 66px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.035em;
+}
+#parrafo1{
+    font-size: 16px;
+    position: static;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0px 60px 0px 0px;
+}
+a.boton-empezar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+    position: static;
+    width: 134px;
+    height: 44px;
+    
+    background: #F3603B;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+a.boton-empezar{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+    
+a.boton-empezar:hover{
+    background: rgb(143, 148, 167);
+}
+
+/* banner 2 */
+#diferent{
+    padding: 0 50px;
+    background: white;
+    height: 600px;
+}
+.contenedor-diferent{
+    position: absolute;
+    width: 433px;
+    height: 212px;
+}
+.contenedor-diferent h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 114.6%;
+    color:#232851;
+}
+#parrafo2{
+    position: static;
+    height: 88px;
+    margin: 0px;
+    display: flex;
+    padding: 0px 70px 0px 0px;
+}
+
+#tres-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 50px 0px 15px;
+    position: absolute;
+    width: 551px;
+    height: 600px;
+    right: 0px;
+}
+
+.segundo1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 551px;
+    height: 162px;
+    top: 0px;
+}
+.segundo2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 551px;
+    height: 162px;
+    
+    top: 190px;
+}
+.segundo3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 551px;
+    height: 162px;
+    
+    top: 380px;
+}
+
+#sub2{
+    position: static;
+    width: 100%;
+    height: 40px;
+    left: 0px;
+    top: 8.5px;
+    margin: 0;
+    font-family: 'Be Vietnam' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+
+    color: #323851;
+}
+
+#parrafo2{
+    position: static;
+    width: 450px;
+    height: 104px;
+    left: 0px;
+    top: 49.5px;
+    font-family: 'Be Vietnam' sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #B3B2B7;
+}
+
+.boton2{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    position: static;
+    width: 50px;
+    height: auto;
+    right: 481px;
+    top: 0px;
+    background: #F3603B;
+    border-radius: 30px;
+    margin: 0px 23px;
+}
+
+/* banner 3 */
+#personas h2{
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+}
+.tiutlo{
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+.tiutlo h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#personas{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    height: 478px;
+}
+#personas img{
+    width: 15%;
+    border-radius: 100%;
+}
+#personas div{
+    padding: 25px 38px 10px 38px;
+    margin: 110px 0px;
+    height: 190px;
+    background: #FAFAFA;
+    color: #B9B9C1;
+}
+#personas h2{
+    color: #242E53;
+    font-family: 'Be Vietnam' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 156.6%;
+}
+#personas div h4{
+    color: #3F4868;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 156.6%
+}
+#personas div p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 156.6%;
+}
+#contenedor-personas{
+    background: grey;
+    position: absolute;
+    padding: 0;
+}/*terminar conte*/
+
+#personas a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    width: 128px;
+    height: 30px;
+    text-decoration: none;
+    background: #F3603B;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    top: 1823px;
+}
+#personas a:hover{
+    
+    text-decoration: none;
+    background: rgb(35, 44, 81);
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+
+/*banner4*/
+#banner4{
+    padding: 0px 50px;
+    background: #F3603B;
+    height: 224px;
+}
+#contenido4{
+    padding: 64px 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 96px;
+}
+#contenido4 h2{
+    width: 500px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+#contenido4 a{
+    display: flex;
+}
+.botonfinal{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    position: relative;
+    width: 128px;
+    height: 30px;
+    left: 0;
+    top: 0;
+
+    background: white;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    margin: 20px 10px;
+}
+a.botonfinal{
+    color: #F3603B;
+    text-decoration: none;
+    font-size: 13px;
+}
+a.botonfinal:hover{
+    background: rgb(35, 44, 81);
+}
+
+/* footer */
+.footer{
+    background: #1E1E26;
+    height: 280px;
+}
+.formulario{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    right: 0px;
+    padding: 50px;
+}
+#nombres{
+    position: relative;
+    border-radius: 30px;
+    width: 201px;
+    height: 44px;
+}
+#Go{
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    width: 80px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    color: white;
+    background: #F3603B;
+    box-shadow: 0px 4px 7px rgb(255, 255, 255, 0.25);
+    border-radius: 50px;
+    margin: 0px 10px
+}
+#Go:hover{
+    background: white;
+    color:rgb(35, 44, 81);
+}
+#conten{
+    padding: 20px 50px;
+    height: 207px;
+}
+.redes{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px 0px 0px 0px;
+    padding: 20px 0px;
+
+}
+
+#conten p{
+    margin: 0px;
+    padding: 6px 274px;
+    color: white;
+}
+.derechos{
+    display: flex;
+    position: absolute;
+    right: 0;
+    font-size: 12.5px;
+    color: #8C8C94;
+}
